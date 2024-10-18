@@ -1,0 +1,55 @@
+:root {
+  --color-navbar: #434343;
+  --color-body: #e5e5e5;
+  --color-btn-confirm: #007dff;
+  --color-btn-decline: #ff505f;
+  --color-rectangle: #ffffff;
+  --color-overlay: rgba(0, 0, 0, 0.5);
+
+  --font: "Roboto", system-ui;
+}
+
+
+.navbar__container {
+  padding-top: 130px;
+  display: flex;
+  width: 138px;
+  height: 100vh;
+  background-color: var(--color-navbar);
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px 0px 32px 0px;
+  position: fixed;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.navbar__container img {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.navbar img:hover:not(.noZoom) {
+  transform: scale(1.2);
+}
+
+.navbar img.noZoom {
+  transform: none;
+}
+
+.circleBackground {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  transition: background-color 0.8s ease;
+}
+
+.circleBackground.active {
+  background-color: #c4c4c436;
+}
+
+.logoClose:hover {
+  content: url('../../assets/close-red.svg'); /* Substitua pelo caminho da nova imagem */
+}

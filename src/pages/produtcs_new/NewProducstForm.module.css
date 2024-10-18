@@ -1,0 +1,139 @@
+body {
+  width: 1440px;
+  height: 900px;
+  background-color: var(--color-body);
+}
+.main__container {
+  padding: 20px;
+  margin-left: 212px;
+  font-family: var(--font);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.54);
+}
+.products__title {
+  margin-top: 40px;
+}
+
+h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 116.7%;
+  color: rgba(0, 0, 0, 0.87);
+  margin-top: 78px;
+}
+
+h2 {
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123.5%;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  display: inline-flex;
+  padding: 6px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background-color: var(--color-btn-confirm);
+  color: #ffffff;
+  border: none;
+  font-family: var(--font);
+}
+
+.newProductsForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.newProductsForm {
+  height: 590px;
+}
+
+.grupoNome,
+.grupoPreco,
+.grupoEstoque,
+.grupoDescricao,
+.grupoImagem {
+  display: flex;
+  flex-direction: column;
+}
+
+.grupoNome input:focus,
+.grupoPreco input:focus,
+.grupoEstoque input:focus,
+.grupoDescricao input:focus,
+.grupoImagem input:focus {
+  border-bottom: 2px solid var(--color-btn-confirm);
+}
+
+.grupoNome:focus-within label,
+.grupoPreco:focus-within label,
+.grupoEstoque:focus-within label,
+.grupoDescricao:focus-within label,
+.grupoImagem:focus-within label {
+  color: var(--color-btn-confirm);
+}
+
+.newProductsForm input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  background-color: var(--color-body);
+  width: 420px;
+  height: 30px;
+  font-size: 16px;
+}
+.newProductsForm label {
+  font-size: 12px;
+}
+
+.products__line {
+  /* display: flex; */
+  width: 1600px;
+  height: 1px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-shrink: 0; */
+  background-color: var(--color-line);
+  margin-top: 120px;
+}
+
+.sameLine input {
+  width: 200px;
+  margin-right: 20px;
+}
+.sameLine {
+  display: flex;
+}
+.grupoBtn {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.refuse {
+  background-color: var(--color-btn-decline);
+}
