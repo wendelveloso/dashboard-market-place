@@ -51,5 +51,5 @@
 }
 
 .logoClose:hover {
-  content: url('../../assets/close-red.svg'); /* Substitua pelo caminho da nova imagem */
+  content: url('../../assets/close-red.svg'); 
 }
